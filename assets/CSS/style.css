@@ -1,0 +1,32 @@
+.crystals{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.crystal{
+	border:1px solid red;
+	height:200px;
+	width: 200px;
+	border-radius: 4px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#win{
+    color: white;
+
+}
+
+#result{
+    color: white;
+}
+#previous{
+    color: white;
+}
+
+body {
+background-image: url(../images/mine-background.jpg);
+padding:200px 100px;
+margin:100px ;
+background-size: cover;
+}
