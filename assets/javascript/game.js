@@ -1,14 +1,18 @@
-var random_result;
-var lost = 0;
-var win = 0;
-var previous = 0;
+let random_result;
+let lost = 0;
+let win = 0;
+let previous = 0;
 
-var resetAndStart = function () {
+let blue_crystal
+
+// Fun math stuff
+
+let resetAndStart = function () {
 
 	$(".crystals").empty();
 
-	var images = [
-			'./images/blue_crystal.jpg', 
+	let images = [
+			'../images/blue_crystal.jpg', 
 			'', 
 			'', 
 			''];
@@ -18,11 +22,11 @@ var resetAndStart = function () {
 
 	$("#result").html('Goal: ' + random_result);
 
-	for(var i = 0; i < 4; i++){
+	for(let i = 0; i < 4; i++){
 
-		var random = Math.floor(Math.random() * 11) + 1;
+		let random = Math.floor(Math.random() * 11) + 1;
 
-		var crystal = $("<div>");
+		let crystal = $("<div>");
 			crystal.attr({
 				"class": 'crystal',
 				"data-random": random
@@ -49,7 +53,7 @@ resetAndStart();
 // On click events
 
 $(document).on('click', ".crystal", function () {
-	var num = parseInt($(this).attr('data-random'));
+	let num = parseInt($(this).attr('data-random'));
 
 	previous += num;
 

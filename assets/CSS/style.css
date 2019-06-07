@@ -1,3 +1,5 @@
+/* Crystal Dimensions */
+
 .crystals{
 	display: flex;
 	justify-content: space-around;
@@ -12,10 +14,8 @@
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#win{
-    color: white;
 
-}
+/* Text color */
 
 #result{
     color: white;
@@ -24,6 +24,17 @@
     color: white;
 }
 
+#win{
+    color: white;
+
+}
+
+#lost{
+    color: white;
+
+}
+
+/* Background */
 body {
 background-image: url(../images/mine-background.jpg);
 padding:200px 100px;
